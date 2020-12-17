@@ -1,0 +1,169 @@
+
+header {
+    /* border: 1px solid black; */
+    height: 200px;
+    
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+ 
+header a img{
+    width: 175px;
+    position: absolute;
+    top: 8px;
+    right: 50px;
+}
+
+
+
+body {
+    background-color: rgba(122, 104, 101, 0.425);
+    font-family: 'Mitr', sans-serif;
+    margin : 0;
+}
+
+.slogan h1{
+    color: rgb(78, 69, 69);
+    font-size: 70px;
+    padding-top: 0px;
+}
+
+h1 span {
+    color: rgba(24, 156, 42, 0.637);
+    font-size: 90px;
+}
+
+.content {
+    border : 1px solid black;
+    height: 535px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(211, 211, 58, 0.815);
+    
+    box-shadow:20px 20px 50px 10px pink;
+
+}
+.chat {
+    
+    width: 350px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.chat p {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background-color: thistle;
+    color : red;
+}
+.chat input {
+    width: 267px;
+    margin: 3px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.chat .chatButtons {
+    font-size :17px;
+    margin: 0;
+    
+}
+
+.game {
+    /* border : 1px solid yellow; */
+    width: 650px;
+    height : 535px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+}
+.game .buttonDepo{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 20px;
+}
+
+.game .deposit {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    font-size: 20px;
+    text-align: right;
+}
+.game label {
+    position: absolute;
+    top: 75px;
+    right: 150px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.game .balance{
+    position: absolute;
+    
+    top: 40px;
+    right: 50px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.game .soal {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    color: yellow;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    position: absolute;
+    top: 175px;
+    left: 280px;
+}
+
+.game .buttonBet0 {
+    font-size: 20px;
+    position: absolute;
+    top: 330px;
+    left: 250px;
+}
+
+.game .buttonBet1 {
+    font-size: 20px;
+    position: absolute;
+    top: 330px;
+    right: 240px;
+}
+
+.game .log{
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    background-color: rgba(197, 116, 22, 0.767);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: yellow;
+}
+
+.game .withdraw {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    bottom: 100px;
+    left: 230px;
+    font-size: 25px;
+    border-color: violet;
+}
+
+.withdraw:hover {
+    border-color: greenyellow;
+    color: rgba(60, 66, 156, 0.89);
+}
