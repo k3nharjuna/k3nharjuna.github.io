@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+        <title>This is skill</title>
+    </head>
+        
+    <body>
+        
+        <header>
+            <div class="slogan">
+                <h1>Win means <span>Ri&cent;h</span> &sect; Lose means</h1>
+            </div>
+            <a href="#"><img src="img/amal_200x200.png" alt=""></a>
+            
+        </header>
+
+        <section>
+            <div class="content">
+                <div class="chat">
+                    <textarea id="liveChat" class = "liveChat"></textarea>  
+                    <input id="chatHere" type="text" placeholder="Live chat . . . &#xF002;">
+                    <button onclick="buttonChat()" id="chatButton" class="chatButtons">Chat!</button>
+                </div>
+                <div class="game">
+                    
+                        <input id="inputBalance" class="deposit" type="number" text-decoration="none" placeholder="deposit here . . . $">
+                        <button class="buttonDepo" onclick="totalBalance()">Depo!!</button>
+                        <label for="duid">Your Balance: </label>
+                        
+                        <p class="balance" id="duid">0</p>
+                        
+                        <p class="soal" id="soal">1</p>
+
+                        <button class="buttonBet0" id="buttonBet0" onclick="bet0()">Bet '0'</button>
+                        <button class="buttonBet1" id="buttonBet1" onclick="bet1()">Bet '1'</button>
+
+                        <p class="log" id="log"></p>
+
+                        <button class="withdraw" id="withdraw" onclick="withdraw()">Withdraw!</button>
+                    
+                </div>
+                <script src="javascript.js"></script>
+            </div>
+        </section>   
+        
+        <footer>
+            <div class="logo"><img src="img/amal_200x200.png" alt="logo"></div>
+            <div class="footerText">
+                <h3>amal</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eos laborum esse reprehenderit, consequatur suscipit expedita ratione sequi praesentium saepe rerum dolorum dolores dicta voluptas, error excepturi quis voluptatum. Sint.</p>
+            </div>
+            <div class="cop"> &copy; Copyright 2020</div>
+        </footer>
+    </body>
+</html>
