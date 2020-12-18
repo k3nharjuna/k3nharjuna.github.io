@@ -38,6 +38,8 @@ function randomNomer(){
             document.getElementById("gif").style.visibility = 'hidden';
             document.getElementById("buttonBet0").disabled = false;
             document.getElementById("buttonBet1").disabled = false;
+            document.getElementById("buttonBet0").style.opacity = 1;
+            document.getElementById("buttonBet1").style.opacity = 1;
             
             clearInterval(tick)
             
@@ -50,6 +52,8 @@ function randomNomer(){
             document.getElementById("gif").style.visibility = 'hidden';
             document.getElementById("buttonBet0").disabled = false;
             document.getElementById("buttonBet1").disabled = false;
+            document.getElementById("buttonBet0").style.opacity = 1;
+            document.getElementById("buttonBet1").style.opacity = 1;
             
             clearInterval(tick)
             
@@ -90,6 +94,8 @@ function randomNomer1(){
             document.getElementById("gif").style.visibility = 'hidden';
             document.getElementById("buttonBet1").disabled = false;
             document.getElementById("buttonBet0").disabled = false;
+            document.getElementById("buttonBet0").style.opacity = 1;
+            document.getElementById("buttonBet1").style.opacity = 1;
             // status = true;
             clearInterval(tick)
             
@@ -102,6 +108,8 @@ function randomNomer1(){
             document.getElementById("gif").style.visibility = 'hidden';
             document.getElementById("buttonBet1").disabled = false;
             document.getElementById("buttonBet0").disabled = false;
+            document.getElementById("buttonBet0").style.opacity = 1;
+            document.getElementById("buttonBet1").style.opacity = 1;
             // status = true;
             clearInterval(tick)
             //clearInterval
@@ -125,6 +133,8 @@ function bet0(){
     }
     document.getElementById("buttonBet0").disabled = true;
     document.getElementById("buttonBet1").disabled = true;
+    document.getElementById("buttonBet0").style.opacity = 0.6;
+    document.getElementById("buttonBet1").style.opacity = 0.6;
     go();
         
 }
@@ -144,6 +154,8 @@ function bet1(){
     }    
     document.getElementById("buttonBet1").disabled = true;
     document.getElementById("buttonBet0").disabled = true;
+    document.getElementById("buttonBet0").style.opacity = 0.6;
+    document.getElementById("buttonBet1").style.opacity = 0.6;
     go1();
 }
 
