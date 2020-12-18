@@ -107,7 +107,7 @@ function go(){
 
         document.getElementById("buttonBet0").style.borderColor = 'blue';
         document.getElementById("buttonBet1").style.borderColor = 'black';
-        if(totBalance < 100){
+        if(totBalance < 200){
             return alert('Not Sufficient Funds!')
         }
     
@@ -126,7 +126,7 @@ function bet1(){
     let totBalance = Number(document.getElementById("duid").innerHTML);
     document.getElementById("buttonBet0").style.borderColor = 'black';
     document.getElementById("buttonBet1").style.borderColor = 'blue';
-    if(totBalance < 100){
+    if(totBalance < 200){
         return alert('Not Sufficient Funds!')
     }    
     go1();
