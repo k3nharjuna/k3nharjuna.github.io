@@ -44,7 +44,7 @@ h1 span {
     position: relative;
     background-color: rgba(201, 167, 57, 0.795);
     
-    box-shadow:20px 20px 50px 10px pink;
+    box-shadow:50px 30px 50px 10px pink;
 
 }
 .chat {
@@ -154,9 +154,12 @@ h1 span {
 .game .log{
     position: absolute;
     bottom: 0;
+    left: 3px;
+    padding: 0;
+    
     font-size: 20px;
     background-color: rgba(197, 116, 22, 0.767);
-    width: 100%;
+    width: 99%;
     height: 40px;
     text-align: center;
     line-height: 40px;
