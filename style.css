@@ -16,7 +16,14 @@ header a img{
     right: 50px;
 }
 
-
+.game .gif {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 135px;
+    left: 290px;
+    visibility: hidden;
+}
 
 body {
     background-color: rgba(122, 104, 101, 0.425);

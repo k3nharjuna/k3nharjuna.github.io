@@ -35,7 +35,10 @@ function randomNomer(){
             document.getElementById("duid").innerHTML = totBalance;
             document.getElementById("log").innerHTML = 'Selamat!! Anda Mendapatkan $200'
             tickTime = 0;
-            // status = true;
+            document.getElementById("gif").style.visibility = 'hidden';
+            document.getElementById("buttonBet0").disabled = false;
+            document.getElementById("buttonBet1").disabled = false;
+            
             clearInterval(tick)
             
         }else{
@@ -44,9 +47,12 @@ function randomNomer(){
             document.getElementById("duid").innerHTML = totBalance;
             document.getElementById("log").innerHTML = 'Terimakasih!! Anda Telah Beramal $200'
             tickTime = 0;
-            // status = true;
+            document.getElementById("gif").style.visibility = 'hidden';
+            document.getElementById("buttonBet0").disabled = false;
+            document.getElementById("buttonBet1").disabled = false;
+            
             clearInterval(tick)
-            //clearInterval
+            
         }
     }
 }
@@ -79,8 +85,11 @@ function randomNomer1(){
         
             totBalance += 200;
             document.getElementById("duid").innerHTML = totBalance;
-            document.getElementById("log").innerHTML = 'Selamat!! Anda Mendapatkan $200'
+            document.getElementById("log").innerHTML = 'Selamat!! Anda Mendapatkan $200';
             tickTime = 0;
+            document.getElementById("gif").style.visibility = 'hidden';
+            document.getElementById("buttonBet1").disabled = false;
+            document.getElementById("buttonBet0").disabled = false;
             // status = true;
             clearInterval(tick)
             
@@ -88,8 +97,11 @@ function randomNomer1(){
             
             totBalance -= 200;
             document.getElementById("duid").innerHTML = totBalance;
-            document.getElementById("log").innerHTML = 'Terimakasih!! Anda Telah Beramal $200'
+            document.getElementById("log").innerHTML = 'Terimakasih!! Anda Telah Beramal $200';
             tickTime = 0;
+            document.getElementById("gif").style.visibility = 'hidden';
+            document.getElementById("buttonBet1").disabled = false;
+            document.getElementById("buttonBet0").disabled = false;
             // status = true;
             clearInterval(tick)
             //clearInterval
@@ -100,26 +112,27 @@ function randomNomer1(){
 function go(){
     
     tick = setInterval(randomNomer, 1000);
+    document.getElementById("gif").style.visibility = 'visible';
 }
 
-    function bet0(){
-        let totBalance = Number(document.getElementById("duid").innerHTML);
+function bet0(){
+    let totBalance = Number(document.getElementById("duid").innerHTML);
 
-        document.getElementById("buttonBet0").style.borderColor = 'blue';
-        document.getElementById("buttonBet1").style.borderColor = 'black';
-        if(totBalance < 200){
-            return alert('Not Sufficient Funds!')
-        }
-    
-        //setTimeout(randomNomer, 1000);
-        
-        go();
-        
+    document.getElementById("buttonBet0").style.borderColor = 'blue';
+    document.getElementById("buttonBet1").style.borderColor = 'black';
+    if(totBalance < 200){
+        return alert('Not Sufficient Funds!')
     }
+    document.getElementById("buttonBet0").disabled = true;
+    document.getElementById("buttonBet1").disabled = true;
+    go();
+        
+}
     
 function go1(){
     
     tick = setInterval(randomNomer1, 1000);
+    document.getElementById("gif").style.visibility = 'visible';
 }
 
 function bet1(){
@@ -129,6 +142,8 @@ function bet1(){
     if(totBalance < 200){
         return alert('Not Sufficient Funds!')
     }    
+    document.getElementById("buttonBet1").disabled = true;
+    document.getElementById("buttonBet0").disabled = true;
     go1();
 }
 
