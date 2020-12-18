@@ -2,7 +2,7 @@
 function buttonChat(){
     let a = document.getElementById("chatHere").value;
     let b = document.getElementById("liveChat").innerText
-    document.getElementById("liveChat").innerHTML = b + ' ' + a;
+    document.getElementById("liveChat").value += a + String.fromCharCode(13, 10);
     
 }
 
